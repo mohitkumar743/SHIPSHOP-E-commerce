@@ -21,7 +21,7 @@ function Home() {
 
         <div className='flex flex-row '>
         <Link to="/shop"><button className='btn m-3 hover:bg-amber-600 hover:text-black text-white bg-slate-600 shadow-md'>Shop Now</button></Link>
-        <Link to="http://localhost:5174/"target="_blank" ><button className='btn m-3 hover:bg-amber-600 hover:text-black text-white bg-slate-600 shadow-md'>Connect to Customer Care</button></Link>
+        <Link to="http://querysolution.vercel.app/"target="_blank" ><button className='btn m-3 hover:bg-amber-600 hover:text-black text-white bg-slate-600 shadow-md'>Connect to Customer Care</button></Link>
         </div></div>
     </div>
    
