@@ -11,7 +11,7 @@ function Shop() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data } = await axios.get("http://localhost:5000/products");
+      const { data } = await axios.get("https://queary-management-system-server.onrender.com/products");
 
       // Add cartValue: 1 to each product
       const productsWithCartValue = data.map(product => ({

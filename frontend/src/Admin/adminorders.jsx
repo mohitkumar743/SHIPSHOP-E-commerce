@@ -23,7 +23,7 @@ function OrderCard({ order, SetStatus }) {
     e.preventDefault();
     
     try {
-      await axios.put(`http://localhost:5000/order/updatestatus/${OrderId}`, { status: selectedStatus });
+      await axios.put(`https://queary-management-system-server.onrender.com/order/updatestatus/${OrderId}`, { status: selectedStatus });
       setIsModalOpen(false);
       // Optionally: refresh products or show success message
       await Swal.fire({

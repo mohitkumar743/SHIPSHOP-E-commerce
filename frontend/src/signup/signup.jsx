@@ -32,7 +32,7 @@ const [btnaction, setbtnaction] = useState(false);
     e.preventDefault();
     setbtnaction(true);
     axios
-      .post("http://localhost:5000/user/new", formData)
+      .post("https://queary-management-system-server.onrender.com/user/new", formData)
       .then(async(response) => {
         setbtnaction(false);
         if(!response.data.message){

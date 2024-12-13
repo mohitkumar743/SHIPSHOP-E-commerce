@@ -24,7 +24,7 @@ useEffect(() => {
 const handleCancelClick = async (orderId) => {
   try {
     // Send request to backend to update the order status
-    const response = await axios.put(`http://localhost:5000/order/cancel/${orderId}`, {
+    const response = await axios.put(`https://queary-management-system-server.onrender.com/order/cancel/${orderId}`, {
       status: 'Canceled'
     });
     await Swal.fire({

@@ -43,7 +43,7 @@ function Login() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/user/login", signinData)
+      .post("https://queary-management-system-server.onrender.com/user/login", signinData)
       .then((response) => {
         console.log(response.data.token);
         if (response.data.token) {

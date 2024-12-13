@@ -6,7 +6,7 @@ const SendMail = async(ttitle,Usermail,agentRespose) => {
   const subject=ttitle;
   const body =agentRespose;
     try {
-      const response = await axios.post('http://localhost:5000/sendMail', {
+      const response = await axios.post('https://queary-management-system-server.onrender.com/sendMail', {
         email,
         subject,
         body,
