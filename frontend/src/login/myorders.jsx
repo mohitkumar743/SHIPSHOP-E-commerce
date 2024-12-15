@@ -29,7 +29,7 @@ function myorders() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("https://queary-management-system-server.onrender.com/order");
+        const response = await axios.get("https://shipshop-e-commerce-backend.onrender.com/order");
         const data = response.data; // Assuming the API response has a 'data' property containing the array
         
         // Ensure 'data' is an array before setting state
