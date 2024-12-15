@@ -29,7 +29,7 @@ function adminLogin() {
     e.preventDefault();
 
     axios
-      .post("https://queary-management-system-server.onrender.com/user/admin", AdminData)
+      .post("https://shipshop-e-commerce-backend.onrender.com/user/admin", AdminData)
       .then((response) => {
         // alert(response.data)
         console.log(response);
