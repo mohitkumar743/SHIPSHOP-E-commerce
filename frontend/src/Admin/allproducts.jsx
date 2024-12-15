@@ -23,7 +23,7 @@ function AllProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://queary-management-system-server.onrender.com/products");
+        const response = await axios.get("https://shipshop-e-commerce-backend.onrender.com/products");
         const data = response.data; // Assuming the API response has a 'data' property containing the array
         
         // Ensure 'data' is an array before setting state
@@ -54,7 +54,7 @@ function AllProducts() {
     const token = localStorage.getItem('AdminAuthtoken');
     setbtnaction(true);
     axios
-      .post("https://queary-management-system-server.onrender.com/products/new", productData,{
+      .post("https://shipshop-e-commerce-backend.onrender.com/products/new", productData,{
         headers: {
           'Authorization': `Bearer ${token}`
         }

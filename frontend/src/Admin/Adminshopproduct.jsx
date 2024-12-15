@@ -12,7 +12,7 @@ function ProductCard({ product,SetProducts}) {
     
     try {
       const _id = product._id;
-      await axios.delete(`https://queary-management-system-server.onrender.com/products/product/${_id}`);
+      await axios.delete(`https://shipshop-e-commerce-backend.onrender.com/products/product/${_id}`);
       
       // Update the Products state by filtering out the deleted product
       SetProducts(prevProducts => prevProducts.filter(p => p._id !== _id));
