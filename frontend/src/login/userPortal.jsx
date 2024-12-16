@@ -70,7 +70,7 @@ function UserPortal() {
       const fetchUserInfo = async () => {
         try {
           const res = await axios.get(
-            "https://queary-management-system-server.onrender.com/user/profile",
+            "https://shipshop-e-commerce-backend.onrender.com/user/profile",
             {
               headers: {
                 Authorization: `Bearer ${token}`,
