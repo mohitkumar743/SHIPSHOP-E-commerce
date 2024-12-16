@@ -58,7 +58,7 @@ function Payment() {
     };
 
     try {
-      const response = await axios.post('https://queary-management-system-server.onrender.com/order/new', updatedOrder);
+      const response = await axios.post('https://shipshop-e-commerce-backend.onrender.com/order/new', updatedOrder);
       console.log('Order saved:', response.data);
       await Swal.fire({
         title: "Successful!",
